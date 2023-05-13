@@ -8,12 +8,32 @@ main{
     margin: auto;
 }
 nav{
+    background-color: red;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-top: 40px;
+    width: 100%;
+    margin: auto;
 }
 .logo{
     font-size: 60px;
+    color: #000;
+    text-decoration: none;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    /* -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; */
+    background-color: black;
+    /* color: black; */
 }
 .navbar{
     display: flex;
@@ -168,4 +188,9 @@ h3{
 h3:hover{
     color:hsl(5, 85%, 63%);
     cursor: pointer;
+}
+@media(min-width: 768px){
+    .hamburger{
+        display: block;
+    }
 }
